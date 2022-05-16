@@ -2,3 +2,126 @@
   font-family: "Jost", sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0px;
+}
+
+:root {
+  --main-text: #2c2c2c;
+  --main-purple: #b28dcf;
+  --dark-purple: #926fad;
+  --yellow: #ffe711;
+  --white: #ffffff;
+}
+/* 
+ background-color: var(--main-color); */
+.header {
+  height: 50px;
+  background-color: var(--main-purple);
+  display: flex;
+  align-items: center;
+}
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-logo {
+  margin-left: 10px;
+}
+.header-name {
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-subtitle {
+  color: var(--main-text);
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.title-title {
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  font-size: 40px;
+  text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 25px;
+}
+.title-description {
+  margin: 15px 0 25px 0;
+}
+.main-btn {
+  background-color: var(--main-purple);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.main-btn:hover {
+  background-color: var(--dark-purple);
+}
+.section-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.color-container {
+  width: 700px;
+}
+.color-description {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.color-selector {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.color-input-wrapper {
+  margin: 25px 0 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-input-item input {
+  width: 120px;
+  height: 30px;
+  margin: 5px 20px 5px 0;
+}
+.color-input-item span {
+  width: 20px;
+}
+.color-input-item {
+  display: flex;
+  align-items: center;
+}
+
+.template-intup-description {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.template-intup-textarea textarea {
+  resize: vertical;
+  width: 1000px;
+  min-height: 300px;
+}
+
+.template-intup-textarea {
+  margin-bottom: 25px;
+}
