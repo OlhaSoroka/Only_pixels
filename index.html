@@ -23,15 +23,40 @@
         <div class="title-subtitle">Wellcome to </div>
         <div class="title-title">Only Pixels</div>
         <div class="title-description">We will help you to render image from template</div>
-        <button class="main-btn">Let's Go</button>
+        <button class="main-btn" id="title-btn">Let's Go</button>
     </section>
-    <section class="section-container">
+    <section>
+        <div class="duck-loading-wrapper" id="duck">
+            <div class="duck-loading-container">
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+                <div class="duck-loading"><img src="./img/pixel_duck.svg" alt="duck"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-container" id="pick-color">
         <div class="color-container">
-            <div class="color-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <div class="color-selector">How many colors will??</div>
-            <button class="main-btn">SELECT</button>
-            <div class="color-input-wrapper">
-                <div class="color-input-item"><span>1</span> <input type="text"></div>
+            <div class="color-description">You have to enter the color according to the character.</div>
+
+            <div class="color-selector">
+                <div class="color-selector-description">How many colors you need? </div>
+                <div class="color-input-color-selector"><input type="number" id="color-number-input" min="1" max="25">
+                </div>
+            </div>
+
+            <div>
+                <button class="main-btn" id="color-number-btn">SELECT</button>
+            </div>
+
+            <form class="color-input-wrapper" id="color-input-wrapper">
+                <!-- <div class="color-input-item"><span>1</span> <input type="text"></div>
                 <div class="color-input-item"><span>2</span> <input type="text"></div>
                 <div class="color-input-item"><span>3</span> <input type="text"></div>
                 <div class="color-input-item"><span>4</span> <input type="text"></div>
@@ -40,10 +65,16 @@
                 <div class="color-input-item"><span>7</span> <input type="text"></div>
                 <div class="color-input-item"><span>8</span> <input type="text"></div>
                 <div class="color-input-item"><span>9</span> <input type="text"></div>
-                <div class="color-input-item"><span>99</span> <input type="text"></div>
-            </div>
-            <button class="main-btn">SUBMIT</button>
+                <div class="color-input-item"><span>a</span> <input type="text"></div>
+                <div class="color-input-item"><span>b</span> <input type="text"></div>
+                <div class="color-input-item"><span>c</span> <input type="text"></div> -->
+            </form>
+            <!-- 
+            <button class="main-btn" id="select-btn">SUBMIT</button> -->
         </div>
+    </section>
+
+    <section>
         <div class="template-intup-container">
             <div class="template-intup-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
@@ -51,6 +82,7 @@
             <button class="main-btn">SUBMIT</button>
         </div>
     </section>
+
     <section>
         <div class="result-text">Let's look at result!!!</div>
     </section>
